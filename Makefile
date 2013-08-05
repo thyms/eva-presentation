@@ -6,6 +6,10 @@ run-app:
 test-app:
 	grunt test
 
+test-app-ci:
+	npm -d install
+	PATH=$PATH:./node_modules/.bin grunt test
+
 setup-app:
 	npm install
 
