@@ -8,7 +8,7 @@ test-app:
 
 test-app-ci:
 	npm -d install
-	PATH=$PATH:./node_modules/.bin grunt test
+	PATH="$PATH":./node_modules/.bin grunt test
 
 setup-app:
 	npm install
