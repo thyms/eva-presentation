@@ -16,7 +16,7 @@
     "seedjs": "latest",
     "co-assets-compiler": "*",
     "restler": "~2.0.1",
-    "nodetime": "*"
+    "strong-agent": "latest"
   },
   "devDependencies": {
     "co-generators": "*",
