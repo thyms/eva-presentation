@@ -12,7 +12,7 @@ module.exports = {
   demo01: {
     driver: "memory"
   },
-  stg01: {
+  stage01: {
     driver: "memory"
   },
   prod01: {
