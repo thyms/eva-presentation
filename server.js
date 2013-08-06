@@ -6,6 +6,13 @@
  * @param {Object} params - compound/express webserver initialization params.
  * @returns CompoundJS powered express webserver
  */
+if(process.env.NODETIME_ACCOUNT_KEY) {
+  require('nodetime').profile({
+    accountKey: process.env.NODETIME_ACCOUNT_KEY,
+    appName: 'Eva Presentation'
+  });
+}
+
 var app = module.exports = function getServerInstance(params) {
   params = params || {};
   // specify current dir as default root of server

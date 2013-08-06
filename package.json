@@ -15,7 +15,8 @@
     "stylus": "latest",
     "seedjs": "latest",
     "co-assets-compiler": "*",
-    "restler": "~2.0.1"
+    "restler": "~2.0.1",
+    "nodetime": "*"
   },
   "devDependencies": {
     "co-generators": "*",
