@@ -7,7 +7,7 @@ var config = {
   },
   demo01: {
   },
-  stg01: {
+  stage01: {
   },
   prod01: {
   }
