@@ -2,6 +2,9 @@ exports.routes = function (map) {
 
   map.get('/', 'homepage#show');
 
+  // Partials
+  map.get('/partials/:partial', 'partials#show');
+
   // Admin
   map.get('admin/status', 'status#show');
 

@@ -1,9 +1,9 @@
 !!! 5
-html(ng-app)
+html(ng-app='main-app')
   head
     title= title
     != stylesheetLinkTag('app/application', 'vendor/bootstrap', 'vendor/bootstrap-responsive')
-    != javascriptIncludeTag('app/application', 'vendor/angular-min', 'vendor/jquery-min', 'vendor/bootstrap')
+    != javascriptIncludeTag('vendor/angular-min', 'vendor/jquery-min', 'vendor/bootstrap', 'app/application')
     != csrfMetaTag()
   body
     .navbar
@@ -25,4 +25,3 @@ html(ng-app)
       hr
       footer
         p © 2012
-  != contentFor('javascripts')
