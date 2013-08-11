@@ -1,17 +1,6 @@
-action('index', function () {
-  var status;
-  if (req.params.section) {
-    status = [
-      {
-        name: "mySection1",
-        properties: {
-          myKey1: 'myValue1',
-          myKey2: 'myValue2'
-        }
-      }
-    ];
-  } else {
-    status = [
+var actions = {
+  index: function () {
+    var status = [
       {
         name: "mySection1",
         properties: {
@@ -27,7 +16,26 @@ action('index', function () {
         }
       }
     ];
-  }
 
-  send({status: status});
-});
+    send({status: status});
+  },
+  show: function() {
+    var status = []
+    if (req.params.id) {
+      status = [
+        {
+          name: "mySection1",
+          properties: {
+            myKey1: 'myValue1',
+            myKey2: 'myValue2'
+          }
+        }
+      ];
+    }
+
+    send({status: status});
+  }
+}
+
+action('index', actions.index);
+action('show', actions.show);
