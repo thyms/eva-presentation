@@ -1,6 +1,3 @@
-###
-  Add your application's coffee-script code here
-###
 controllers =
   StatusController: ($scope) ->
 #    console.log "value: #{$scope.value}"
