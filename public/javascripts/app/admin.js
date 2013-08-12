@@ -5,15 +5,16 @@
 
   app.config([
     '$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
-      return $routeProvider.when("/status/:section", {
+      $routeProvider.when("/admin/status/:section", {
         templateUrl: "/partials/admin_status",
         controller: "StatusController"
-      }).when("/status", {
+      }).when("/admin/status", {
         templateUrl: "/partials/admin_status",
         controller: "StatusController"
       }).otherwise({
-        redirecTo: "/status"
+        redirecTo: "/admin/status"
       });
+      return $locationProvider.html5Mode(true);
     }
   ]);
 
