@@ -10,6 +10,7 @@ exports.routes = function (map) {
   map.resources('status', { path: 'api/1/status' });
 
   // Fixtures
-  map.get('admin/fixture/reset', 'fixture#reset');
-  map.post('admin/fixture/configs', 'fixture#configsPost');
+  map.get('fixture/reset', 'fixture#reset');
+  map.get('fixture/status/applicationVersion', 'fixture#statusApplicationVersion');
+  map.get('fixture/status/commitHash', 'fixture#statusCommitHash');
 };
